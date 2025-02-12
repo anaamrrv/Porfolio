@@ -19,7 +19,7 @@ export default function Navbar() {
         <nav className='navbar'>
             <ul>
                 <li>
-                    <button>Inicio</button>
+                    <button onClick={() => scrollToSection('.hero')}>Inicio</button>
                 </li>
                 <li>
                     <button onClick={() => scrollToSection('.about')}>Sobre mí</button>

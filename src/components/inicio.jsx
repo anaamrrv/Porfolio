@@ -2,7 +2,7 @@ import "../styles/Inicio.css"
 
 export default function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div className="hero-image">
         <img
           src='me.jpg'
