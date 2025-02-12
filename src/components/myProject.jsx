@@ -1,4 +1,4 @@
-import "../styles/MyProyect.css"
+import "../styles/MyProject.css"
 import { useState } from "react"
 
 export default function MyProject() {
@@ -29,14 +29,14 @@ export default function MyProject() {
     const carrousel = () => {
         const [current, setCurrent] = useState(0)
 
-        const prevSlice = () => {
+        const prevSlide = () => {
             setCurrent(current === 0 ? projects.length - 1 : current - 1)
         }
 
-        const nextSlice = () => {
+        const nextSlide = () => {
             setCurrent(current === projects.length - 1 ? 0 : current +1)
         }
-    }
+    
 
     return (
     <section id="project">
@@ -44,7 +44,7 @@ export default function MyProject() {
             <h1>Mis proyectos</h1>
         </div>
         <div className="carousel-container">
-            <button className="nav-btn left" onClick={prevSlice}>‹</button>
+            <button className="nav-btn left" onClick={prevSlide}>‹</button>
             <div className="carousel-slide">
                 <img src={projects[current].image} alt={proyects[current].title}></img>
                 <h3>{projects[current].title}</h3>
@@ -56,4 +56,4 @@ export default function MyProject() {
  
   )
 }
-
+}

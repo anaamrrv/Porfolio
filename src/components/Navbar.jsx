@@ -24,6 +24,9 @@ export default function Navbar() {
                 <li>
                     <button onClick={() => scrollToSection('.about')}>Sobre mí</button>
                 </li>
+                <li>
+                    <button onClick={() => scrollToSection('.project')}>Mis proyectos</button>
+                </li>
             </ul>
         </nav>
 

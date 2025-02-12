@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Inicio from './components/inicio'
-import AboutMe from './components/aboutMe'
+import AboutMe from './components/AboutMe'
+import MyProject from './components/myProject'
 import './index.css'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <main>
             <Inicio />
             <AboutMe />
+            <MyProject />
         </main>
       </div>
   )
