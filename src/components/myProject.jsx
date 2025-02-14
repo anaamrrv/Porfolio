@@ -26,7 +26,6 @@ export default function MyProject() {
         }
     ]
 
-    const carrousel = () => {
         const [current, setCurrent] = useState(0)
 
         const prevSlide = () => {
@@ -39,21 +38,20 @@ export default function MyProject() {
     
 
     return (
-    <section id="project">
+    <section id="project" className="project">
         <div>
-            <h1>Mis proyectos</h1>
+            <h2>Mis proyectos</h2>
         </div>
         <div className="carousel-container">
             <button className="nav-btn left" onClick={prevSlide}>‹</button>
             <div className="carousel-slide">
-                <img src={projects[current].image} alt={proyects[current].title}></img>
+                <img src={projects[current].image} alt={projects[current].title}></img>
                 <h3>{projects[current].title}</h3>
                 <p>{projects[current].description}</p>
             </div>
             <button className="nav-btn right" onClick={nextSlide}>›</button>
         </div>
     </section>
- 
   )
 }
-}
+

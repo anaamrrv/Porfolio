@@ -2,6 +2,7 @@ import Navbar from './components/Navbar'
 import Inicio from './components/inicio'
 import AboutMe from './components/AboutMe'
 import MyProject from './components/myProject'
+import ContactMe from './components/contacMe'
 import './index.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
             <Inicio />
             <AboutMe />
             <MyProject />
+            <ContactMe />
         </main>
       </div>
   )
